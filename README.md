@@ -2,6 +2,8 @@
 
 Sometimes you just need to get that one HTML page online, fast.
 
+ZERO JavaScript and purged TailwindCSS output for prod, Vite HMR for dev.
+
 ## Getting Started
 
 1. Change title, description.
