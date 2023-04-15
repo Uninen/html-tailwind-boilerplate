@@ -1,4 +1,4 @@
-# HTML Boilerplate With Tailwind CSS
+# HTML Boilerplate With Tailwind CSS + Vite HMR
 
 Sometimes you just need to get that one HTML page online, fast.
 
@@ -11,10 +11,7 @@ Sometimes you just need to get that one HTML page online, fast.
 5. Configure (or remove) GA-script.
 6. Add your content and style it with Tailwind CSS.
 
-## Support Open Source development
+## Elsewhere
 
-[Follow @uninen on Twitter](https://twitter.com/uninen)!
-
-If you want to support my open source on [GitHub](https://github.com/Uninen) and [GitLab](https://gitlab.com/uninen), you can buy me a 🍺 or ☕️ :)
-
-<a href="https://www.buymeacoffee.com/Uninen" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+- [Follow @uninen](https://twitter.com/uninen) on Twitter
+- Read my continuously updating learnings from Vite / Vue / TypeScript and other Web development topics from my [Today I Learned site](https://til.unessa.net/)
