@@ -4,12 +4,10 @@ Sometimes you just need to get that one HTML page online, fast.
 
 ## Getting Started
 
-1. Change title.
-2. Change (or remove) description.
-3. Add `favicon.ico` to the root.
-4. Add apple touch icon as `icon.png` to root (or remove corresponding line from HEAD).
-5. Configure (or remove) GA-script.
-6. Add your content and style it with Tailwind CSS.
+1. Change title, description.
+2. Add favicon to `public/` and tweak the corresponding link tag.
+3. Add apple touch icon to `public/icon.png` (or remove corresponding file + line from HEAD).
+4. Add your content and style it with Tailwind CSS.
 
 ## Elsewhere
 
