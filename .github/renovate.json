@@ -6,6 +6,7 @@
     ":widenPeerDependencies"
   ],
   "enabledManagers": [
+    "github-actions",
     "npm"
   ],
   "packageRules": [
@@ -23,10 +24,11 @@
       "stabilityDays": 2
     },
     {
-      "matchPackagePatterns": [
-        "npm"
+      "matchManagers": [
+        "github-actions"
       ],
-      "rangeStrategy": "auto"
+      "automerge": true,
+      "stabilityDays": 2
     }
   ],
   "timezone": "Europe/Helsinki",
