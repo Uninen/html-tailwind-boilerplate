@@ -1,7 +1,7 @@
 {
   "name": "tailwind-boilerplate",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "autoprefixer": "10.4.16",
-    "postcss": "8.4.32",
-    "tailwindcss": "3.3.6",
-    "vite": "5.0.7"
+    "autoprefixer": "10.4.17",
+    "postcss": "8.4.33",
+    "tailwindcss": "3.4.1",
+    "vite": "5.0.12"
   }
 }
