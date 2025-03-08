@@ -1,5 +1,4 @@
-@tailwind base;
-
+@import 'tailwindcss';
 *,
 *::before,
 *::after {
@@ -99,6 +98,3 @@ caption:not([align]) {
 [hidden] {
   display: none !important; /* make sure this cannot be overridden by utilities */
 }
-
-@tailwind components;
-@tailwind utilities;

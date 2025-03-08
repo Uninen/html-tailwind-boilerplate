@@ -1,36 +1,39 @@
 {
-  "extends": [
-    "config:base",
-    "group:all",
-    "schedule:weekly",
-    ":widenPeerDependencies"
-  ],
-  "enabledManagers": [
-    "github-actions",
-    "npm"
-  ],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "enabledManagers": ["npm", "github-actions"],
+  "timezone": "Europe/Helsinki",
+  "dependencyDashboard": true,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "schedule": ["after 4am and before 8am on Tuesday"]
+  },
   "packageRules": [
     {
-      "updateTypes": [
-        "patch"
-      ],
-      "enabled": false
+      "description": "Default automerge settings for all updates",
+      "matchManagers": ["npm", "github-actions"],
+      "automerge": true,
+      "automergeSchedule": ["after 4am and before 8am on Monday and Thursday"]
     },
     {
-      "matchManagers": [
-        "npm"
-      ],
-      "automerge": true,
-      "stabilityDays": 2
+      "description": "Add minimum release age for npm packages",
+      "matchManagers": ["npm"],
+      "minimumReleaseAge": "3 days"
     },
     {
-      "matchManagers": [
-        "github-actions"
-      ],
-      "automerge": true,
-      "stabilityDays": 2
+      "description": "Group github actions",
+      "matchManagers": ["github-actions"],
+      "groupName": "github actions",
+      "labels": ["deps", "ci"],
+      "commitMessagePrefix": "chore(ci)"
+    },
+    {
+      "description": "Root dependencies",
+      "matchFileNames": ["package.json", "pnpm-lock.yaml"],
+      "groupName": "npm deps",
+      "labels": ["deps"],
+      "commitMessagePrefix": "chore(deps)"
     }
-  ],
-  "timezone": "Europe/Helsinki",
-  "dependencyDashboard": true
+  ]
 }
