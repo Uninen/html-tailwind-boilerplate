@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4.2.2
-      - uses: actions/cache@v4.2.3
+      - uses: actions/cache@v4.2.4
         with:
           path: /home/runner/.local/share/pnpm/store
           key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
